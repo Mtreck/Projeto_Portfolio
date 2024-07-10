@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+/* Cores*/
+.Poseidon-1-hex { color: #012030; }
+.Poseidon-2-hex { color: #13678A; }
+.Poseidon-3-hex { color: #45C4B0; }
+.Poseidon-4-hex { color: #9AEBA3; }
+.Poseidon-5-hex { color: #DAFDBA; }
+
+/* Tipografia*/
+*{
+   padding: 0; 
+   margin: 0;
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url('img/img\ grande.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.passarinho {
+    position: absolute;
+    top: 10%;
+    left: 19%;
+    width: 500px;
+    height: auto;
+    animation: voar 4s linear infinite;
+    transform: scaleX(-1);
+}
+
+@keyframes voar {
+    0% {
+        transform: translateX(0%) scaleX(-1); /* Começa no início da tela */
+    }
+    100% {
+        transform: translateX(100%) scaleX(-1); /* Move para o final da tela */
+    }
+}
+
+/*header*/
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos à esquerda e à direita */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding: 20px; /* Adicione espaçamento interno conforme necessário */
+    border-bottom: 2px solid #9AEBA3; /* Adicione uma borda azul na linha de baixo */
+}
+
+.nome {
+    font-family: "Cinzel", serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 2vh;
+    margin-top: 0; /* Remova a margem superior */
+
+}
+
+.titulo {
+    font-family: "Bebas Neue", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding-right: 135vh;
+    margin-top: 0; /* Remova a margem superior */
+    margin-left: 0px; /* Adicione margem à esquerda */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Alinha os itens horizontalmente */
+    margin: 0; /* Remova a margem para alinhar corretamente */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*main*/
+
+
+.main-corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Adicione algum espaçamento entre os itens */
+}
+
+.calendario {
+    margin-top: 10vh;
+    margin-left: 2vw;
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+
+#mensagem {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: right;
+    margin-left: 0vw; /* Adicione margem à esquerda para espaçamento */
+    margin-right: 20vh;
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+
+#dataAtual {
+    color: #ffffff;
+    font-size: 140px;
+    font-family: "Imbue", serif;
+    margin-top: 10vh;
+    margin-left: 2vw; /* Adicione margem à esquerda para espaçamento */
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+
+.sobre{
+    font-size: 30px;
+    color:#ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: right;
+    margin-top: 10vh;
+    margin-left: 2vw; /* Adicione margem à esquerda para espaçamento */
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+
+.info-titulo{
+    font-size: 80px; /* Aumente esse valor conforme necessário */
+    font-family: "Cinzel", serif;
+    color: #ffffff;
+    margin-top: 30vh;
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+.info-titulo2{
+    font-size: 30px; /* Aumente esse valor conforme necessário */
+    font-family: "Cinzel", serif;
+    color: #9AEBA3;
+    margin-top: -7vh;
+    margin-left: 75vh;
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+.info-titulo3{
+    font-size: 80px; /* Aumente esse valor conforme necessário */
+    font-family: "Cinzel", serif;
+    color: #ffffff;
+    margin-top: -2vh;
+    flex: 1; /* Ocupa a largura restante do espaço disponível */
+}
+
+/*MEIO*/
+.ferramentas{
+    background: linear-gradient(to bottom, #1d1d1d, #13678A);
+    margin-top: 10vh;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.topo-ferramentas{
+    padding-top: 10vh;
+    margin-left: 52vh;
+    width: 50%;
+    line-height: 3vh;
+}
+
+.apresentação{
+    color: white;
+    font-size: 52px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    
+}
+.apresentação-sub{
+ color: white;
+ font-size: 20px;
+ margin-top: 3vh;
+}
+
+.front-end{
+    padding-top: 10vh;
+    width: 100%;
+    line-height: 3vh;
+
+}
+
+h2{
+    font-family: "Cinzel", serif;
+    color: #9AEBA3;
+    font-size: 32px;
+}
+
+.p-tecnologia{
+    color: white;
+    font-size: 31px;
+    margin-top: 1vh;
+    line-height: 4vh;
+    padding-bottom: 8vh;
+    
+}
+
+.tecnologia-e-trabalho{
+    text-align: center;
+    display: flex;
+   
+}
+
+.tecnologias_que_uso{
+    background-color: #45C4B0;
+    width: 35%;
+    box-shadow: 2px 2px 15px #13678A;
+    padding: 2vh;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    margin-left: 30vh;
+    margin-right: 5vh;
+   
+}
+.h2-tecnologia{
+    padding-top: 2.5vh;
+
+}
+
+.P-tecnologia{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 3vh;
+
+}
+
+
+
+.Como_gosto_de_trabalhar{
+    width: 35%;
+    background-color: #45C4B0;
+    box-shadow: 2px 2px 15px #13678A;
+    padding: 2vh;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+}
+.h2-trabalho{
+    padding-top: 2.5vh;
+}
+.p-trabalho{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 5vh;
+    line-height: 4vh;
+}
+
+/*trabalhos*/
+
+.trabalhos{
+    color: #ffffff;
+    text-align: center;
+}
+
+.trabalhos-h1{
+    font-family: "Cinzel", serif;
+    margin-top: 3VH;
+    font-size: 58px;
+}
+
+.trabalhos-p{
+    font-size: 28px;
+}
+
+
+.feitos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.javascript{
+    margin-top: 2vh;
+    display: flex;
+}
+
+.java-feito{
+    display: flex;
+    background-color: #45C4B0;
+    width: 18%;
+    height: 10vh;
+    margin-left: 10vh;
+    margin-top: 2vh;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.h1-feito{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 4vh;
+}
+.h1-feito-relogio{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 4vh;
+    margin-left: 6vh;
+}
+.h1-feito-contador{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 4vh;
+    margin-left: 6vh;
+}
+
+.js-img{
+    border-radius: 0px 20px 20px 0px;
+    width: 10vh;
+    height: 10vh;
+
+}
